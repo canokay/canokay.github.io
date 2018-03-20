@@ -1,4 +1,7 @@
 # Hello Github World!
+
+20.03.2018
+
 Github da ki ilk bloguma hoş geldiniz.
 
 Burada öğrendiğim, paylaşmak istediğim blog postlarını paylaşıcam.
