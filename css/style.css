@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+#container{
+	width:1920px;
+	height:auto;
+	margin:0 auto;
+	background:#039;
+}
+
+
+.banner {
+    position: relative;
+	margin: 0 auto;
+}
+
+.banner > img{
+    width: 100%;
+    height: auto;
+	margin: 0 auto;
+	display:block;
+}
+
+.banner > video{
+    width: 100%;
+    height: auto;
+}
+
+.banner > .content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.bannerhalf {
+    position: relative;
+	margin: 0 auto;
+}
+
+.bannerhalf > img{
+    width: 50%;
+	float: right;
+    height: auto;
+	margin: 0 auto;
+	display:block;
+}
+
+.bannerhalf > video{
+    width: 50%;
+    height: auto;
+	margin: 0 auto;
+	display:block;
+	float: right;
+}
+
+.bannerslide {
+    position: relative;
+	margin: 0 auto;
+	overflow:scroll;
+}
+
+.bannerslide > img{
+    width: 220%;
+    height: auto;
+	margin: 0 auto;
+	display:block;
+}
+
+.bannervisible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+.bannerhidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+		
+.bannerabsolute {
+    position: absolute;
+	top: 0px;
+	left: 50%;
+}
+
+.bannerabsolute > video{
+	width: 100%;
+    height: auto;
+}
