@@ -1,10 +1,13 @@
 # İlk Xamarin Deneyimim Nasıldı?
 
 Her zaman Mobile Developerlıkla uğraşmak istedim. Windows işletim sistemi kullanıyorum. 
+
 Windowsta da iOS geliştirmek imkansız (yani ben öyle sanıyordum). 
+
 Daha sonra bitirme projemi hem Android hem iOS olan bir uygulama aldım. 
 Ne yapacağımı bilmiyordum. Yani Android'i Android Studioda halledebilirdim ama iOS için illaki mac gerek.
 GDG 2018 İzmir Event'ine gittim ve orada Angular kullanarak Ionicde tasarlayarak tek kodda Hem Android Hem iOS App yapılabileceğini öğrendim.
+
 Bunu çok yakın arkadaşım <a href="https://github.com/TheAvenqer"> Barış'a </a> (Yazılım Mühendisliği Öğrencisi) anlattım ve "Bana angular kaynağı bulabilir misin?" diye sordum. O da "Sen C# ile ilgilen miyor musun? Git Xamarini araştır." dedi.
 
 ve yeni macera başladı= XAMARIN
