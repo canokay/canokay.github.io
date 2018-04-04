@@ -11,7 +11,7 @@
   body {
       position: relative; 
   }
-  #section1 {padding: 75px 10px 40px 10px;height:auto;color: #000000; background: #ffffff;}
+  #canokaybanner {padding: 75px 10px 40px 10px;height:auto;color: #000000; background: #ffffff;}
   #bio {padding: 75px 10px 40px 10px;height:auto;color: #000000; background: #FAFAFA;}
   #firstCode {padding: 50px 10px; height:auto;color: #000000; background: #ffffff;}
   #firstAccess {padding: 50px 10px;height:auto;color: #000000;background-color: #FAFAFA;}
@@ -32,7 +32,6 @@
   #pythonNotlari {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
   #projectEuler {padding: 50px 10px;height:auto;color: #777777; background-color: #ffffff;}
   #algorithms {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
-
       .facebook{
           background:#4267B2;
           color: #ffffff;
@@ -62,7 +61,10 @@
           background:linear-gradient(to left,#5F5FCD,#B93A93,#EC5A4B,#FCBC58);
           color: #ffffff;   
       }
-      
+      .mediumlink{
+          background: #12100E;
+          color: #ffffff;   
+      }
       .sendmail{
           background:#000000;
           color: #ffffff;   
@@ -87,12 +89,48 @@
           background:#6E81B6;
           color: #ffffff;   
       }
+      
+      
+/* Add a dark background color to the footer */
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
+
   
   </style>
+    
+<script>
+$(document).ready(function(){
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+      window.location.hash = hash;
+      });
+    } 
+  });
+})
+</script>
+    
+    
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<!-- Header -->
+<nav class="navbar navbar-inverse navbar-fixed-top github">
   <div class="container-fluid">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -113,48 +151,49 @@
     </div>
   </div>
 </nav>    
-
-<div id="section1" class="container-fluid text-center">
+<!-- Header End -->
+<div id="canokaybanner" class="container-fluid text-center">
    <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/logo.jpg" height="300px" width="300px">
   <h1>Can Okay</h1>
   <h2>Blogger, Back End Developer</h2>
   <p>Android, iOS, React Native, Algorithms (Python and Java)</p>
-    
       <input type="submit" class="btn facebook" onClick=" window.open('https://www.facebook.com/canokaypage');" value="Facebook: Can Okay Page">
       <input type="submit" class="btn twitter" onClick=" window.open('https://www.twitter.com/cannokay');" value="Twitter: @cannokay">
       <input type="submit" class="btn linkedin" onClick=" window.open('https://www.linkedin.com/in/cannokay/');" value="Linkedin: cannokay">
       <input type="submit" class="btn github" onClick=" window.open('https://www.github.com/canokay');" value="GitHub: canokay">
       <input type="submit" class="btn youtube" onClick=" window.open('https://www.youtube.com/cannokay');" value="YouTube: cannokay">
-      <input type="submit" class="btn instagram" onClick=" window.open('https://www.instagram.com/cannokay');" value="Instagram: @cannokay">
+      <input type="submit" class="btn instagram" onClick=" window.open('https://www.instagram.com/cannokay');" value="Instagram: @cannokay"> 
+  <p> </p>
+  <p>
+     <input type="submit" class="btn mediumlink" onClick=" window.open('https://medium.com/@canokay');" value="Medium: @cannokay">
+     <input type="submit" class="btn mediumlink" onClick=" window.open('https://medium.com/@canokayblog');" value="Medium: @cannokayblog">
+ </p>
     <p>
-    
-    </p>
-    <p>
-      <input type="submit" class="btn sendmail" onClick=" window.open('mailto:canokay2014@gmail.com');" value="mail: canokay2014@gmail.com">
+     <input type="submit" class="btn sendmail" onClick=" window.open('mailto:canokay2014@gmail.com');" value="mail: canokay2014@gmail.com">
     </p>
 </div>
 <div id="bio" class="container-fluid text-center">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/earth-logo.png" height="100px" width="100px">
+  <img src="img/earth-logo.png" height="100px" width="100px">
   <h1>Hi! Hello!</h1>
   <h2>1998'de dünyaya geldim.</h2>
 </div>
     
 <div id="firstCode" class="container-fluid text-left">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/code-logo.png" width="100px" height="auto">
+  <img src="img/code-logo.png" width="100px" height="auto">
   <h1>2008 <small>(10 Yaşımda)</small></h1>
   <h2>Kod yazmaya başladım.</h2>
   <h2>(Temel düzeyde HTML)</h2>
   <p>Kendi kendime HTML öğrenip table ile siteler tasarladım.</p>
 </div>
 <div id="firstAccess" class="container-fluid text-right">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/access-logo.png" height="100px" width="100px">
+  <img src="img/access-logo.png" height="100px" width="100px">
   <h1>2008</h1>
   <h2>Access üzerinden okul veri tabanı yaptım.</h2>
   <h2>(Temel düzeyde Access)</h2>
   <p>Bir okulun sınıf, öğrenci, not gibi bilgilerinin kayıtlı olduğu bir Access veri tabanı yaptım.</p>
 </div>
 <div id="webDeveloping" class="container-fluid text-left">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/html5-css3-javascript-php-logo.png">
+  <img src="img/html5-css3-javascript-php-logo.png">
   <h1>2014</h1>
   <h2>Temel Düzeyde HTML5 CSS3 JavaScript Asp.net ve PHP öğrendim.</h2>
   <input type="submit" class="btn html5color" onClick=" window.open('https://github.com/canokay/html-notlari');" value="HTML5 Notları">
@@ -171,7 +210,7 @@
   <p>(Temel düzeyde Asp.net ile yapıldı)</p>
 </div>
 <div id="github" class="container-fluid text-left">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/kimbukim-logo.png" height="100px" >
+  <img src="img/kimbukim-logo.png" height="100px" >
   <h1>2016</h1>
   <h2>kimbu.kim</h2>
   <h2>Lise Dönem sonu projesi</h2>
@@ -179,87 +218,87 @@
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/kimbukim');" value="Repostory'e git">
 </div>
 <div id="javaNotlari" class="container-fluid text-right">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/java-logo.png" height="100px" width="100px">
+  <img src="img/java-logo.png" height="100px" width="100px">
   <h1>2018</h1>
   <h2>Java Notları</h2>
   <p>(Temel düzeyde PHP ile yapıldı)</p>
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/Java-Notlari');" value="Repostory'e git">
 </div>
 <div id="firstAndroid" class="container-fluid text-center">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/android-logo.png" height="auto" width="100px">
+  <img src="img/android-logo.png" height="auto" width="100px">
   <h1>2018</h1>
   <h2>İlk Android Projem</h2>
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/AndroidFirstApp');" value="Repostory'e git">
 </div>
 <div id="firstiOS" class="container-fluid text-center">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/ios-logo.png" height="100px" width="100px">
+  <img src="img/ios-logo.png" height="100px" width="100px">
   <h1>2018</h1>
   <h2>İlk iOS Projem</h2>
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/iOS-First-App');" value="Repostory'e git">
 </div>
 <div id="androidCanOkaySplashScreen" class="container-fluid text-right">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/android-logo.png" height="auto" width="100px">
+  <img src="img/android-logo.png" height="auto" width="100px">
   <h1>2018</h1>
   <h2>Android Can Okay Splash Screen</h2>
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/Android-CanOkaySplashScreen-v1');" value="Repostory'e git">
 </div>
 <div id="androidFirebaseAuthentication" class="container-fluid text-center">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/firebase-authentication-logo.png" height="100px" width="100px">
+  <img src="img/firebase-authentication-logo.png" height="100px" width="100px">
   <h1>2018</h1>
   <h2>Android Firebase Authentication </h2>
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/Android-FirebaseAuthenticationExample');" value="Repostory'e git">
 </div>
 <div id="androidFirebaseStorage" class="container-fluid text-center">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/firebase-storage-logo.png" height="100px" width="100px">
+  <img src="img/firebase-storage-logo.png" height="100px" width="100px">
   <h1>2018</h1>
   <h2>Android Firebase Storage </h2>
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/Android-FirebaseStorageExample');" value="Repostory'e git">
 </div>
 <div id="reactNativeNotlarim" class="container-fluid text-center">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/react-native-logo.png" height="100px" width="100px">
+  <img src="img/react-native-logo.png" height="100px" width="100px">
   <h1>2018</h1>
   <h2>React Native Notlarım</h2>
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/ReactNative-Notlari');" value="Repostory'e git">
 </div>
     
 <div id="reactNativeJsonDatabese" class="container-fluid text-right">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/react-native-logo.png" height="100px" width="100px">
+  <img src="img/react-native-logo.png" height="100px" width="100px">
   <h1>2018</h1>
   <h2>React Native Json Database</h2>
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/ReactNative-DatabaseApp');" value="Repostory'e git">
 </div>
     
 <div id="reactNativeFirebaseAuthentication" class="container-fluid text-left">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/react-native-logo.png" height="100px" width="100px">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/firebase-authentication-logo.png" height="100px" width="100px">
+  <img src="img/react-native-logo.png" height="100px" width="100px">
+  <img src="img/firebase-authentication-logo.png" height="100px" width="100px">
   <h1>2018</h1>
   <h2>React Native Firebase Authentication</h2>
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/ReactNative-FirebaseAuthenticationExample');" value="Repostory'e git">
 </div>
 <div id="androidDynamicSplashScreen" class="container-fluid text-right">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/android-logo.png" height="auto" width="100px">
+  <img src="img/android-logo.png" height="auto" width="100px">
   <h1>2018</h1>
   <h2>Android Dynamic Splash Screen</h2>
   <p>Android App Logosunu Splash Screende gösteren çalışma</p>
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/AndroidDynamicSplashScreen');" value="Repostory'e git">
 </div>
 <div id="pythonNotlari" class="container-fluid text-left">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/python-logo.png" height="100px" width="100px">
+  <img src="img/python-logo.png" height="100px" width="100px">
   <h1>2018</h1>
   <h2>Python Notları</h2>
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/Python-Notlari');" value="Repostory'e git">
 </div>
 <div id="projectEuler" class="container-fluid text-right">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/python-logo.png" height="100px" width="100px">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/java-logo.png" height="100px" width="100px">
+  <img src="img/python-logo.png" height="100px" width="100px">
+  <img src="img/java-logo.png" height="100px" width="100px">
   <h1>2018</h1>
   <h2>Project Euler</h2>
   <p>Project Euler algoritma sorularının (Genellikle python) çözümleri. </p>
   <input type="submit" class="btn btn-success" onClick=" window.open('https://github.com/canokay/ProjectEuler');" value="Repostory'e git">
 </div>
 <div id="algorithms" class="container-fluid text-left">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/python-logo.png" height="100px" width="100px">
-  <img src="https://raw.githubusercontent.com/canokay/canokay.github.io/master/img/java-logo.png" height="100px" width="100px">
+  <img src="img/python-logo.png" height="100px" width="100px">
+  <img src="img/java-logo.png" height="100px" width="100px">
   <h1>2018</h1>
   <h2>Algorithms</h2>
   <p>Kendi algoritma sorularımın (Genellikle python) çözümleri. </p>
@@ -276,8 +315,20 @@
         
     </div>
     
-    <footer class="container-fluid bg-4 text-center ">
-  <p>Provided by <a href="https://canokay.github.io">Can Okay</a></p> 
+<!-- Footer -->
+<footer class="text-center github">
+  <a class="up-arrow" href="#" data-toggle="tooltip" title="Yukarı">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Powered By  <a href="https://canokay.github.io" data-toggle="tooltip" title="Can Okay">Can Okay</a></p> 
 </footer>
+
+<script>
+$(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
+})
+</script>
+<!-- Footer End -->
 </body>
 </html>
