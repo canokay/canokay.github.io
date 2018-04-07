@@ -1,0 +1,98 @@
+  body {
+      position: relative;
+  }
+  #main {padding: 75px 10px 40px 10px;height:auto;color: #000000; background: #ffffff;}
+  #bio {padding: 75px 10px 40px 10px;height:auto;color: #000000; background: #FAFAFA;}
+  #firstCode {padding: 50px 10px; height:auto;color: #000000; background: #ffffff;}
+  #firstAccess {padding: 50px 10px;height:auto;color: #000000;background-color: #FAFAFA;}
+  #webDeveloping {padding: 50px 10px;height:auto;color: #777777;background: linear-gradient(to bottom,#ffffff,#eeeeee);}
+  #okucalisogren {padding: 50px 10px;height:auto;color: #111; background: linear-gradient(to left,#ffffff,#eeeeee);}
+  #github {padding: 50px 10px;height:auto;color: #777777; background: linear-gradient(to left,#ffffff,#eeeeee);}
+  #javaNotlari {padding: 50px 10px;height:auto;color: #777777;background: linear-gradient(to right,#ffffff,#eeeeee);}
+  #blog {padding: 50px 10px;height:auto;color: #ffffff; background-color: #212429;}
+  #firstAndroid {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
+  #firstiOS {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
+  #androidCanOkaySplashScreen {padding: 50px 10px;height:auto;color: #777777; background-color: #ffffff;}
+  #androidFirebaseAuthentication {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
+  #androidFirebaseStorage {padding: 50px 10px;height:auto;color: #777777;background-color: #ffffff;}
+  #reactNativeNotlarim {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
+  #reactNativeJsonDatabese {padding: 50px 10px;height:auto;color: #777777;background-color: #ffffff;}
+  #reactNativeFirebaseAuthentication {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
+  #androidDynamicSplashScreen {padding: 50px 10px;height:auto;color: #777777; background-color: #ffffff;}
+  #pythonNotlari {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
+  #projectEuler {padding: 50px 10px;height:auto;color: #777777; background-color: #ffffff;}
+  #algorithms {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
+      .facebook{
+          background:#4267B2;
+          color: #ffffff;
+      }
+
+      .twitter{
+          background:#1B95E0;
+          color: #ffffff;
+      }
+
+      .linkedin{
+          background:#0077B5;
+          color: #ffffff;
+      }
+
+      .github{
+          background:#24292E;
+          color: #ffffff;
+      }
+
+      .youtube{
+          background:#ff0000;
+          color: #ffffff;
+      }
+
+      .instagram{
+          background:linear-gradient(to left,#5F5FCD,#B93A93,#EC5A4B,#FCBC58);
+          color: #ffffff;
+      }
+      .mediumlink{
+          background: #12100E;
+          color: #ffffff;
+      }
+      .sendmail{
+          background:#000000;
+          color: #ffffff;
+      }
+
+      .html5color{
+          background:#F15B31;
+          color: #ffffff;
+      }
+
+      .css3color{
+          background:#007EC6;
+          color: #ffffff;
+      }
+
+      .javascriptcolor{
+          background:#F58333;
+          color: #ffffff;
+      }
+
+      .phpcolor{
+          background:#6E81B6;
+          color: #ffffff;
+      }
+
+
+/* Add a dark background color to the footer */
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
