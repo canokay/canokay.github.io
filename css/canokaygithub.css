@@ -1,27 +1,33 @@
   body {
       position: relative;
   }
-  #main {padding: 75px 10px 40px 10px;height:auto;color: #000000; background: #ffffff;}
-  #bio {padding: 75px 10px 40px 10px;height:auto;color: #000000; background: #FAFAFA;}
-  #firstCode {padding: 50px 10px; height:auto;color: #000000; background: #ffffff;}
-  #firstAccess {padding: 50px 10px;height:auto;color: #000000;background-color: #FAFAFA;}
-  #webDeveloping {padding: 50px 10px;height:auto;color: #777777;background: linear-gradient(to bottom,#ffffff,#eeeeee);}
-  #okucalisogren {padding: 50px 10px;height:auto;color: #111; background: linear-gradient(to left,#ffffff,#eeeeee);}
-  #github {padding: 50px 10px;height:auto;color: #777777; background: linear-gradient(to left,#ffffff,#eeeeee);}
-  #javaNotlari {padding: 50px 10px;height:auto;color: #777777;background: linear-gradient(to right,#ffffff,#eeeeee);}
+  #main {
+      padding: 75px 10px 40px 10px;
+      height:auto;color: #000000; 
+  }
+  #bio {
+      padding: 75px 10px 40px 10px;
+      height:auto;color: #000000;
+  }
+  #firstCode {padding: 50px 10px; height:auto;color: #000000;}
+  #firstAccess {padding: 50px 10px;height:auto;color: #000000;}
+  #webDeveloping {padding: 50px 10px;height:auto;color: #777777;}
+  #okucalisogren {padding: 50px 10px;height:auto;color: #111;}
+  #github {padding: 50px 10px;height:auto;color: #777777; }
+  #javaNotlari {padding: 50px 10px;height:auto;color: #777777;}
   #blog {padding: 50px 10px;height:auto;color: #ffffff; background-color: #212429;}
-  #firstAndroid {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
-  #firstiOS {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
-  #androidCanOkaySplashScreen {padding: 50px 10px;height:auto;color: #777777; background-color: #ffffff;}
-  #androidFirebaseAuthentication {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
-  #androidFirebaseStorage {padding: 50px 10px;height:auto;color: #777777;background-color: #ffffff;}
-  #reactNativeNotlarim {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
-  #reactNativeJsonDatabese {padding: 50px 10px;height:auto;color: #777777;background-color: #ffffff;}
-  #reactNativeFirebaseAuthentication {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
-  #androidDynamicSplashScreen {padding: 50px 10px;height:auto;color: #777777; background-color: #ffffff;}
-  #pythonNotlari {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
-  #projectEuler {padding: 50px 10px;height:auto;color: #777777; background-color: #ffffff;}
-  #algorithms {padding: 50px 10px;height:auto;color: #777777; background-color: #FAFBFC;}
+  #firstAndroid {padding: 50px 10px;height:auto;color: #777777; }
+  #firstiOS {padding: 50px 10px;height:auto;color: #777777; }
+  #androidCanOkaySplashScreen {padding: 50px 10px;height:auto;color: #777777; }
+  #androidFirebaseAuthentication {padding: 50px 10px;height:auto;color: #777777;}
+  #androidFirebaseStorage {padding: 50px 10px;height:auto;color: #777777;}
+  #reactNativeNotlarim {padding: 50px 10px;height:auto;color: #777777;}
+  #reactNativeJsonDatabese {padding: 50px 10px;height:auto;color: #777777;}
+  #reactNativeFirebaseAuthentication {padding: 50px 10px;height:auto;color: #777777; }
+  #androidDynamicSplashScreen {padding: 50px 10px;height:auto;color: #777777;}
+  #pythonNotlari {padding: 50px 10px;height:auto;color: #777777; }
+  #projectEuler {padding: 50px 10px;height:auto;color: #777777;}
+  #algorithms {padding: 50px 10px;height:auto;color: #777777;}
       .facebook{
           background:#4267B2;
           color: #ffffff;
@@ -80,4 +86,16 @@
           color: #ffffff;
       }
 
+      .bio{
+          padding: 15px;
+        }
+       .cvliste{
+          padding-left:120px;
+       }
+        #contact{
+          padding: 15px;  
+        }
 
+        #contact a{
+          color:darkslategray; 
+        }
