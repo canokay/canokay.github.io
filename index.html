@@ -101,10 +101,23 @@
                                 <a href="https://medium.com/@canokayblog" target="_blank" class="btn btn-just-icon btn-link btn-medium"><i class="fab fa-medium"></i></a>
                                 <a href="mailto:canokay2014@gmail.com" target="_blank" class="btn btn-just-icon btn-link btn-envelope"><i class="far fa-envelope"></i></a>
                                 
-                                <!-- progress bars -->
-                             
-                                <h3>Skills</h3>
-                                <table class="table">
+                         
+                                
+                                
+                                <!-- Acordion table -->
+     <div id="accordion">                           
+  <div>
+    
+    
+       <div class="card-header" id="headingOne">
+      
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+         <h3 class="mb-0">Skills ▾</h3>
+        </button>
+    </div>    
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <table class="table">
                                   <thead>
                                     <tr>
                                       <th scope="col">#</th>
@@ -203,13 +216,20 @@
                                     </tr>
                                       
                                   </tbody>
-                                </table>                
-                                <!-- progress bars end -->
-                                
-                                <!-- framework bars -->
-                             
-                                <h3>Frameworks</h3>
-                                <table class="table">
+                                </table> 
+      </div>
+    </div>
+  </div>
+  <div >
+    <div class="card-header" id="headingTwo">
+      
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         <h3 class="mb-0">Frameworks ▾</h3>
+        </button>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <table class="table">
                                   <thead>
                                     <tr>
                                       <th scope="col">#</th>
@@ -236,13 +256,19 @@
 
                                     
                                   </tbody>
-                                </table>                
-                                <!-- framework bars end -->
-                                
-                                <!-- Tools bars -->
-                             
-                                <h3>Tools</h3>
-                                <table class="table">
+                                </table>  
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="card-header" id="headingThree">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         <h3 class="mb-0">Tools ▾</h3>
+        </button>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+       <table class="table">
                                   <thead>
                                     <tr>
                                       <th scope="col">#</th>
@@ -336,7 +362,16 @@
                                       </td>
                                     </tr>
                                   </tbody>
-                                </table>                
+                                </table> 
+      </div>
+    </div>
+  </div>
+</div>                                
+                            </div>                         
+                                
+                                <!-- Acordion Table End -->
+                                
+                                             
                                 <!-- framework bars end -->
                             </div>
                         </div>
@@ -345,6 +380,7 @@
         <!--   Profile End  -->        
               
     <!--   Bio   -->
+        
     <div id="bio" class="container-fluid text-center">                 
       <i class="fas fa-globe fa-5x"></i>
       <h1>Hi! Hello!</h1>
@@ -429,10 +465,6 @@
             <h2 class="text-center">Lise Dönem Sonu Projelerim</h2>
                 <div class="row">
                     <div class="col-md-6 ml-auto mr-auto">
-                        
-                        
-                        
-                        
                         <div class="profile-tabs">
                             <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
                                 <li class="nav-item">
@@ -468,20 +500,22 @@
                         <div class="row">
                     <div class="col-md-6 ml-auto mr-auto">
                            <div class="container-fluid">
-                              <img src="img/kimbukim-logo.png" height="50px" width="50px"  class="img-fluid">
+                              <img src="img/kimbukim-logo.png" class="col-md-6">
                               <h1>2016</h1>
                               <h2>kimbu.kim</h2>
                               <h2>Lise Dönem sonu projesi</h2>
                               <p>Temel düzeyde PHP Projesi. <a href="https://github.com/UlasDenizCakmazel" target="_blank">@UlasDenizCakmazel</a> ile birlikte yapıldı.</p>
-                                <a href="https://github.com/canokay/kimbukim" target="_blank" class="btn btn-success btn-raised btn-lg">
+                               <div class="col-md-6 ml-auto mr-auto">
+                                <a href="https://github.com/canokay/kimbukim" target="_blank" class="btn btn-success btn-raised btn-block">
                                   <i class="fab fa-github"></i> GitHub Repostory'e git
                                 </a>
-                                <a href="https://gitlab.com/canokay/kimbukim" target="_blank" class="btn btn-warning btn-raised btn-lg">
+                                <a href="https://gitlab.com/canokay/kimbukim" target="_blank" class="btn btn-warning btn-raised btn-block">
                                   <i class="fab fa-gitlab"></i> GitLab Repostory'e git
                                 </a>
-                                <a href="https://bitbucket.org/canokay/kimbukim" target="_blank" class="btn btn-info btn-raised btn-lg">
+                                <a href="https://bitbucket.org/canokay/kimbukim" target="_blank" class="btn btn-info btn-raised btn-block">
                                   <i class="fab fa-bitbucket"></i> Bitbucket Repostory'e git
                                 </a>
+                                </div>
                             </div>
                         </div>
                         </div>
@@ -694,7 +728,7 @@
             </tr>
               
             <tr>
-              <th scope="row">7</th>
+              <th scope="row">9</th>
               <td>Andorid Widget Example</td>
               <td>
                   <a href="https://github.com/canokay/Andorid-WidgetExample" target="_blank">
@@ -709,7 +743,7 @@
             </tr>
               
             <tr>
-              <th scope="row">8</th>
+              <th scope="row">10</th>
               <td>Firebase Widget</td>
               <td>
                   <a href="https://github.com/canokay/FirebaseWidget" target="_blank">
@@ -980,7 +1014,6 @@
           Medium @canokay
        </a>
     </div>
- </div>
         
      <div id="contact" class="container-fluid text-left">   
          <div class="col-md-4 ml-auto mr-auto">
@@ -998,8 +1031,8 @@
                 <a href="mailto:canokay2014@gmail.com" target="_blank" ><i class="far fa-envelope"></i> Mail</a> <br>
              </div>
          </div>
-    </div>
-</div>   
+    </div> 
+ </div>
         
     <footer class="footer">
         <div class="container">            
