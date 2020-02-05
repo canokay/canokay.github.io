@@ -4,7 +4,20 @@ title: İletişim
 permalink: /contact/
 ---
 
-İletişim Linkleri:
+## İletişim Adresi:
 
-<a href="https://wwww.github.com/canokay/">Github </a>
+İzmir/Türkiye
+
+<hr>
+
+## İletişim Linkleri:
+
+<a href="mailto:hello@canokay.com">hello@canokay.com</a>
+
+<a href="https://wwww.github.com/canokay/">Github</a>
+
 <a href="https://www.linkedin.com/in/cannokay/">Linkedin</a>
+
+<a href="https://codepen.io/canokay">Codepen</a>
+
+<a href="https://medium.com/@canokay">Medium</a>
