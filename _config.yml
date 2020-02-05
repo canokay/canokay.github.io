@@ -9,7 +9,7 @@
 title: Can Okay
 email: hello@canokay.com
 description: >
-  Awesome site description here
+  Software Developer
 logo: "/assets/images/logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://canokay.com" # the base hostname & protocol for your site
@@ -17,8 +17,7 @@ paginate:	5 # The number of posts to show per page on your homepage
 
 name: 'Can Okay'
 bio: >
-  Mea suas vituperatoribus et, virtute corpora quaestio cum ut.
-  Ne solet nostrum complectitur pri, vis ut inani populo.
+  Software Developer
 author_image: "/assets/images/author.jpg"
 twitter_username: cannokay
 github_username:  canokay
