@@ -14,7 +14,7 @@ permalink: /contact/
 
 <a href="mailto:hello@canokay.com">hello@canokay.com</a>
 
-<a href="https://wwww.github.com/canokay/">Github</a>
+<a href="https://www.github.com/canokay/">Github</a>
 
 <a href="https://www.linkedin.com/in/cannokay/">Linkedin</a>
 
