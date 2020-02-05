@@ -530,7 +530,7 @@ Oluşturduğumuz css adlı klasörün içinde style.css CSS dosyasını oluştur
 
 style.css dosyasının içerisine aşağıdaki css'i girin ve kaydedin.
 
-```css
+```
 h1{
     color: blue;
 }
