@@ -534,7 +534,6 @@ style.css dosyasının içerisine aşağıdaki css'i girin ve kaydedin.
 h1{
     color: blue;
 }
-
 ```
 Oluşturduğumuz templates/web/index.html dosyasına gidin ve aşağıdaki gibi kaydedin.
 
