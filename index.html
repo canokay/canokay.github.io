@@ -1,207 +1,50 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8' />
-  <title>Can Okay | Software Developer</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <link rel="shortcut icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/24297924?s=460&v=4">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+---
+layout: default
+---
 
-  <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet'>
-  <link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet'>
-  <link href='css/style.css' rel='stylesheet'>
-</head>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<main class="content" role="main">
 
-  ga('create', 'UA-71664387-1', 'auto');
-  ga('send', 'pageview');
+  <header class="blog-header">
+      <h1 class="blog-title">{{ site.title }}</h1>
+      <h2 class="blog-description">{{ site.description }}</h2>
+  </header>
 
-</script>
-<body>
-  <div id='particles-js'></div>
-  <div class='intro-rect'>
-    <div class='fade-in one'>
-      <img class="rounded-circle" src="https://avatars2.githubusercontent.com/u/24297924?s=460&v=4" height="150px">
-      <h1 class='fade-in one'>Hi, I'm Can</h1>
-    </div>
-    <div class='fade-in two'>
-      <p>I’m Software Developer and student in Izmir / Turkey.
-      </p>
-    </div>
-    <div class='links fade-in three'>
-      <a href='https://www.instagram.com/cannokay/'>
-        <span class="fa-stack">
-          <i class='fa fa-circle fa-stack-2x'></i>
-          <i class='fa fa-instagram fa-stack-1x fa-inverse'></i>
-        </span>
-      </a>
-      <a href='http://github.com/canokay'>
-        <span class="fa-stack">
-          <i class='fa fa-circle fa-stack-2x'></i>
-          <i class='fa fa-github-alt fa-stack-1x fa-inverse'></i>
-        </span>
-      </a>
-      <a href='http://twitter.com/cannokay'>
-        <span class="fa-stack">
-          <i class='fa fa-circle fa-stack-2x'></i>
-          <i class='fa fa-twitter fa-stack-1x fa-inverse'></i>
-        </span>
-      </a>
-      <a href='http://linkedin.com/in/cannokay'>
-        <span class="fa-stack">
-          <i class='fa fa-circle fa-stack-2x'></i>
-          <i class='fa fa-linkedin fa-stack-1x fa-inverse'></i>
-        </span>
-      </a>
-      <a href='mailto:canokay2014@gmail.com'>
-        <span class="fa-stack">
-          <i class='fa fa-circle fa-stack-2x'></i>
-          <i class='fa fa-envelope fa-stack-1x fa-inverse'></i>
-        </span>
-      </a>
-    </div>
-
+  <div class="cf frame">
+    {% for post in paginator.posts %}
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <div class="article-item">
+          <header class="post-header">
+            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+          </header>
+          <section class="post-excerpt" itemprop="description">
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          </section>
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-  <script src='http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
-  <script>
 
-  var particleSettings = {
-    "particles": {
-      "number": {
-        "value": 60,
-        "density": {
-          "enable": true,
-          "value_area": 400
-        }
-      },
-      "color": {
-        "value": "#27ae60"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#27ae60"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 3,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#8e8e8e",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 10,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": false,
-          "mode": "repulse"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true
-  };
+  <nav class="pagination" role="navigation">
+    {% if paginator.next_page %}
+      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
+    {% else %}
+      <a class="newer-posts disabled">&larr; Older posts</a>
+    {% endif %}
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+        <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
+      {% else %}
+        <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+      {% endif %}
+    {% else %}
+      <a class="older-posts disabled">Newer posts &rarr;</a>
+    {% endif %}
+  </nav>
 
-  var colors = {
-    'green': '#27ae60',
-    'pink': '#d32542',
-    'orange': '#ff7f19',
-    'yellow': '#ffc500',
-  };
+</main>
 
-  var randomColor = colors[Object.keys(colors)[Math.floor(Math.random() * Object.keys(colors).length)]];
-  particleSettings.particles.color.value = randomColor;
-  particlesJS("particles-js", particleSettings);
-
-  document.addEventListener("DOMContentLoaded", function() {
-     var elements = document.querySelectorAll('a');
-     [].forEach.call(elements, function(value){
-       value.style.color = randomColor;
-     });
-  });
-
-  </script>
-</body>
-</html>
+{% include footer.html %}
