@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mustafa Akgül Özgür Yazılım Kış Kampı 2020 Ruby on Rails Kursu
+comments: true
 ---
 
 25-28 Ocak Tarihlerinde Anadolu Üniversitesinde düzenlenen **Ruby on Rails** kursunda aldığım ders notlarım. 
