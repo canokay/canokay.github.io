@@ -7,27 +7,28 @@ title: Mustafa Akgül Özgür Yazılım Kış Kampı 2020 Ruby on Rails Kursu
 
 ## 1. Gün
 
-Ruby syle guide
+* Ruby syle guide
 
-Revolation OS izle.
+* Revolation OS izle.
 
 ### Gitflow
 
-https://nvie.com/posts/a-successful-git-branching-model/
+* <a href="https://nvie.com/posts/a-successful-git-branching-model/">https://nvie.com/posts/a-successful-git-branching-model/</a>
+
 
 <hr>
 
-Iaas
+* Iaas
 
-Paas
+* Paas
 
-Saas
+* Saas
 
 <hr>
 
-https://puma.io/
+* <a href="https://puma.io/">https://puma.io/</a>
 
-https://github.com/puma/puma
+* <a href="https://github.com/puma/puma">https://github.com/puma/puma</a>
 
 <hr>
 
@@ -37,23 +38,21 @@ Rubynin hazine sandığıdır. Icinde ruby, python, js vb kodlar olabilir.
 
 TODO: Ruby Gem githubdan bak.
 
-katip gemi lab2023 bak.
+TODO: katip gemi lab2023 bak.
 
-https://github.com/lab2023/katip
+* <a href="https://github.com/lab2023/katip">https://github.com/lab2023/katip</a>
 
-Ruby Gems
 
-https://rubygems.org/
+Ruby Gems: 
+<a href="https://rubygems.org/">https://rubygems.org/</a>
 
 Gemler private repository olabiliyor.
-<hr>
 
+<hr>
 
 # My First Gem
 
-
 ## bundle init
-
 
 ```
 bundle init
@@ -99,15 +98,16 @@ BUNDLED WITH
 
 # 1. Gün Özeti
 
-Http, Web Servisler Https vb çalışma mantığını öğrendik.
+* Http, Web Servisler Https vb çalışma mantığını öğrendik.
 
-Git ve Gitflow öğrendik.
+* Git ve Gitflow öğrendik.
 
-Gem öğrendik.
+* Gem öğrendik.
 
-Gem ile proje geliştirmeyi öğrendik.
+* Gem ile proje geliştirmeyi öğrendik.
 
-Gem: bundle, bundle insert vb öğrendik.
+* Gem: bundle, bundle insert vb öğrendik.
+
 <hr>
 
 ## 2. Gün
@@ -115,12 +115,13 @@ Gem: bundle, bundle insert vb öğrendik.
 ## Ruby Toolbox
 
 Gems Popularity, Releases, Activity gibi istatistikleri gösteriyor. Gem bulmak için kullanılıyor.
+<a href="https://www.ruby-toolbox.com/">https://www.ruby-toolbox.com/</a>
 
-https://www.ruby-toolbox.com/
 
 ### Devise Gem
 
-https://github.com/heartcombo/devise
+* <a href="https://github.com/heartcombo/devise">https://github.com/heartcombo/devise</a>
+
 
 ## Rails Doctrine
 
@@ -136,48 +137,51 @@ Inflection Kütüphanesi
 
 ## 3. Gün
 
-https://stimulusjs.org/
+* <a href="https://stimulusjs.org/">https://stimulusjs.org/</a>
 
-https://kebab-project.com/
+* <a href="https://kebab-project.com/">https://kebab-project.com/</a>
 
 ### Dom ve Bom
 
 
 * Dom: Document Object Model
 
-(document. , browser. gibi)
+  * (document. , browser. gibi)
 
 * BOM: Browser Object Model
 
-(navigator. ,window.Open)
+  * (navigator. ,window.Open)
 
 * ECMAScript 6
 
-Event-driven programming
+  * Event-driven programming
 
-TODO: mdm bak.
+<hr>
 
-TODO - Oku: https://stimulusjs.org/handbook/origin
+* TODO: <a href="https://developer.mozilla.org/tr/">MDN</a> bak.
 
-TODO - Oku: https://m.signalvnoise.com/the-majestic-monolith/
+* TODO: - Oku: <a href="https://stimulusjs.org/handbook/origin">https://stimulusjs.org/handbook/origin</a>
 
-transaction araştır
+* TODO: - Oku: <a href="https://m.signalvnoise.com/the-majestic-monolith/">https://m.signalvnoise.com/the-majestic-monolith/</a>
 
-https://guides.rubyonrails.org/active_record_basics.html
+* TODO: Transaction araştır.
 
-https://docs.rollbar.com/docs/rails
+<a href="https://guides.rubyonrails.org/active_record_basics.html">https://guides.rubyonrails.org/active_record_basics.html</a>
 
-https://gist.github.com/peternixey/1978249
+<a href="https://docs.rollbar.com/docs/rails">https://docs.rollbar.com/docs/rails</a>
 
-Rails Admin: https://activeadmin.info/
+<a href="https://gist.github.com/peternixey/1978249">https://gist.github.com/peternixey/1978249</a>
+
+
+Rails Admin: <a href="https://activeadmin.info/">https://activeadmin.info/</a>
 
 <hr>
 
 ## 4. Gün
 
 jbuilder
+<a href="https://github.com/rails/jbuilder">https://github.com/rails/jbuilder</a>
 
-https://github.com/rails/jbuilder
 
 ### content_for == Jinja Templates
 ```html
@@ -187,25 +191,25 @@ https://github.com/rails/jbuilder
 ```
 
 
+<a href="https://guides.rubyonrails.org/">https://guides.rubyonrails.org/</a>
 
-https://guides.rubyonrails.org/
 
 layouts_and_rendering.html#using-the-content-for-method
 
 * default_url_sections
+<a href="https://guides.rubyonrails.org/action_controller_overview.html#default-url-options">https://guides.rubyonrails.org/action_controller_overview.html#default-url-options</a>
 
-https://guides.rubyonrails.org/action_controller_overview.html#default-url-options
 
 * Sessions
+<a href="https://guides.rubyonrails.org/action_controller_overview.html#session">https://guides.rubyonrails.org/action_controller_overview.html#session</a>
 
-https://guides.rubyonrails.org/action_controller_overview.html#session
 
 <hr>
 * Mail
+<a href="https://mailtrap.io/">https://mailtrap.io/</a>
 
-https://mailtrap.io/
+<a href="https://guides.rubyonrails.org/action_mailer_basics.html">https://guides.rubyonrails.org/action_mailer_basics.html</a>
 
-https://guides.rubyonrails.org/action_mailer_basics.html
 
 Maillarda **path** değil **url** kullanılır. `gmail.com/path` olmaması için.
 
@@ -214,8 +218,8 @@ Maillarda **path** değil **url** kullanılır. `gmail.com/path` olmaması için
 ### Active Job
 
 Notification vb iş yazma
+<a href="https://guides.rubyonrails.org/active_job_basics.html">https://guides.rubyonrails.org/active_job_basics.html</a>
 
-https://guides.rubyonrails.org/active_job_basics.html
 
 ```ruby
 # Enqueue a job to be performed 1 week from now.
@@ -223,21 +227,22 @@ GuestsCleanupJob.set(wait: 1.week).perform_later(guest)
 ```
 
 Redis ve Sidekiq öneriliyor.
-
-https://github.com/ondrejbartas/sidekiq-cron
-
+<a href="https://github.com/ondrejbartas/sidekiq-cron">https://github.com/ondrejbartas/sidekiq-cron</a>
 
 
-https://crontab.guru/
+
+<a href="https://crontab.guru/">https://crontab.guru/</a>
+
 
 
 ### Active Storage
 
 Dosya kaydetme okuma vb. için kullanılır.
 
-#### Database ve migrate işlemleri
+### Database ve Migrate İşlemleri
 
-https://guides.rubyonrails.org/active_storage_overview.html
+<a href="https://guides.rubyonrails.org/active_storage_overview.html">https://guides.rubyonrails.org/active_storage_overview.html</a>
+
 
 ```
 rails active_storage:install
@@ -246,17 +251,17 @@ rails active_storage:install
 ```
 rails db:migrate
 ```
-Image crop resize vb için **Minimagick Gem**
+Image crop resize vb için <a href="https://github.com/minimagick/minimagick">Minimagick Gem</a>
 
-https://github.com/minimagick/minimagick
 
 * Direct Uploads uploadlanırken progressbar çıkıyor.
 
 #### Ckeditor == trix
 
-https://edgeguides.rubyonrails.org/action_text_overview.html
+* <a href="https://edgeguides.rubyonrails.org/action_text_overview.html">https://edgeguides.rubyonrails.org/action_text_overview.html</a>
 
-https://github.com/basecamp/trix 
+* <a href="https://github.com/basecamp/trix">https://github.com/basecamp/trix</a>
+
 
 #### Action Cable 
 
@@ -271,32 +276,33 @@ scope "/:locale" do
 
 ## Ruby Gems
 
-bml
+* bml
 
-simple_form
+* simple_form
 
-resque
+* resque
 
-friendly_id
+* friendly_id
 
-bullet
+* bullet
 
+<hr>
 
-https://www.railscasts.com
+# Yararlı Linkler
 
+<a href="https://www.railscasts.com">https://www.railscasts.com</a>
 
 rails book'u 4. versyonu bul oku
 
-gorails.com
+<a href="https://gorails.com/">https://gorails.com/</a>
 
-https://thoughtbot.com/upcase
 
-https://github.com/lab2023/cybele
+<a href="https://thoughtbot.com/upcase">https://thoughtbot.com/upcase</a>
 
-https://capistranorb.com/
+<a href="https://github.com/lab2023/cybele">https://github.com/lab2023/cybele</a>
 
-https://lab2023.com/ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi.html
+<a href="https://capistranorb.com/">https://capistranorb.com/</a>
 
-dokku heroku 
+<a href="https://lab2023.com/ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi.html">https://lab2023.com/ruby-on-rails-uygulamasinin-heroku-servisinde-coklu-ortamda-yayinlanmasi.html</a>
 
-https://rubyturkiye.org/
+<a href="https://rubyturkiye.org/">https://rubyturkiye.org/</a>
