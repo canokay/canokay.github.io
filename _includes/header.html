@@ -3,10 +3,10 @@
 
   <div class="page-links">
     <a class="page-link" href="{{ site.baseurl }}/">Anasayfa</a>
-    {% for my_page in site.pages %}
-      {% if my_page.title %}
-      • <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-      {% endif %}
-    {% endfor %}
+    
+    • <a class="page-link" href="/about/">Hakkında</a>
+    
+    • <a class="page-link" href="/contact/">İletişim</a>
+
   </div>
 </header>
