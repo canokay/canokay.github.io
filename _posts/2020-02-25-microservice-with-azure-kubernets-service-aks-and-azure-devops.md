@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Microservice with Azure Kubernets Service (AKS) and Azure Devops
+title: Microservice with Azure Kubernets Service (AKS) and Azure Devops - Etkinlik Notları
 ---
 
 Microservice with Azure Kubernets Service (AKS) and Azure Devops İzmirde olan etkinlik notlarım.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: İzmir Gophers Etkinlik Notları
+title: İzmir Gophers Organize Olarak Başarmak (Scrum ve Kanban), Sistem Mimarileri Nasıl Seçmeli? - Etkinlik Notları
 ---
 
 23 Şubat **Organize Olarak Başarmak (Scrum ve Kanban), Sistem Mimarileri Nasıl Seçmeli?** etkinliği notlarım.

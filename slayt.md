@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Can Okay SlideShare
-permalink: /slide/
+permalink: /slayt/
 ---
 
 <br>
