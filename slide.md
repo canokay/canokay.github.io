@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Can Okay Slaytları
+title: Can Okay SlideShare
 permalink: /slide/
 ---
 
