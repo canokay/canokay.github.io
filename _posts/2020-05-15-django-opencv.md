@@ -646,6 +646,7 @@ yukarıdaki gibi kodlayın.
 
 templates/layout.html dosyasını oluşturun. Bu dosyanın içerisine aşağıdaki kodları girin.
 
+
 ```html
 <!doctype html>
 <html lang="en">
