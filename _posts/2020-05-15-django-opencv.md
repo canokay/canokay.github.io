@@ -648,57 +648,6 @@ templates/layout.html dosyasını oluşturun. Bu dosyanın içerisine aşağıda
 
 
 
-index.html içerisini
-
-```
-{% extends "layout.html" %}
-
-{% block headerTitle %}Images {% endblock headerTitle %}
-
-{% block content %}
-    <h1>Images</h1>
-    <ul>
-    <a href="../add/">Add new image</a>
-    {% for image in images %}
-        <li><img src="{{ image.image.url }}" height=150px /> - <a href="../edit/{{image.id}}">{{ image.title }}</a></li>
-    {% empty %}
-        <li>No images yet.</li>
-    {% endfor %}
-    </ul>
-
-{% endblock content %}
-
-
-```
-
-olarak kodlayın.
-
-Bu yaptığımız işlem 
-* layout.html adlı bir dosya oluşturduk.
-    * layout.html dosyası içerisine master html layout kodlarını yazdık. Bu kodlar Cdn linkleri, head, body vb...
-    * Diğerki sayfalarda kullanacağımız block'ları ekledik (content vb..)
-* index.html sayfasında kullanacağımız blokları **headerTitle** ve **content** oluşturduk. Bu block'lar layout.html üzerinde belirttiğimiz blocklar oluyor. 
-
-http://127.0.0.1:8000/ Urlsine geldiğimizde eklenen resimleri görebiliriz.
-
-
-
-```
-    {% for image in images %}
-        <li><img src="{{ image.image.url }}" height=150px /> - <a href="../edit/{{image.id}}">{{ image.title }}</a></li>
-    {% empty %}
-        <li>No images yet.</li>
-    {% endfor %}
-```
-
-Yukarıdaki kod index.html içerisine yolladığımız **images** context'ini **image** olarak kullanmamızı sağlayan koddur. 
-
-* http://127.0.0.1:8000/admin/django_opencv_app/image/add/ urlsine gidin ve test verileri ekleyin.
-* http://127.0.0.1:8000/ anasayfaya gittiğinizde girdiğiniz veriler'i göreceksiniz.
-
-
-
-
 ## 12. django_opencv_app/forms.py Oluşturma
 
 django_opencv_app/forms.py dosyasını oluşturun.
