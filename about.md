@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 ### Kısa Özgeçmişim:
-İsmim Can Okay. Son iki yıldır:
+İsmim Can Okay. Anadolu Üniversitesi/Açıköğretim Fakültesi/Yönetim Bilişim Sistemleri (2021-2025) okuyorum. Son iki yıldır:
 
 * Backend: Django, Flask, Codeigniter 
 * Frontend: Html, Css, Javascript, Bootstrap
