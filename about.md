@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 ### Kısa Özgeçmişim:
-İsmim Can Okay. 2016-2019 Yılları arasında Dokuz Eylül Üniversitesi - Biglisayar Programcılığı bölümünü okudum. Son iki yıldır:
+İsmim Can Okay. Son iki yıldır:
 
 * Backend: Django, Flask, Codeigniter 
 * Frontend: Html, Css, Javascript, Bootstrap
