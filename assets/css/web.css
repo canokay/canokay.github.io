@@ -1,0 +1,79 @@
+/* Custom styles for CV one-page */
+
+.hero-banner {
+  background-image: linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.55)),
+    url("../img/hero.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 2.75rem;
+  height: 2px;
+  background: #111827;
+}
+
+.section-title .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: #111827;
+  flex-shrink: 0;
+}
+
+.nav-link.active {
+  background-color: #ff0055;
+  color: #fff;
+}
+
+.nav-link:not(.active) {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.nav-link:not(.active):hover {
+  background-color: #e5e7eb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.project-modal {
+  opacity: 0;
+  transition: opacity 0.22s ease;
+}
+
+.project-modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.project-modal-backdrop {
+  transition: opacity 0.22s ease;
+}
+
+.project-modal-panel {
+  transition: opacity 0.22s ease, transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.project-modal-panel.is-open {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.project-modal-panel:not(.is-open) {
+  transform: scale(0.95) translateY(8px);
+}

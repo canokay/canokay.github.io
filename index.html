@@ -1,50 +1,763 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Can Okay — CV</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: "#FF0055",
+          },
+          fontFamily: {
+            sans: ["Segoe UI", "Helvetica Neue", "Arial", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/web.css" />
+</head>
+<body class="bg-[#f5f5f7] text-gray-900 font-sans antialiased">
+  <!-- Hero -->
+  <header class="hero-banner relative h-52 sm:h-64 md:h-72 w-full overflow-hidden"></header>
 
-<main class="content" role="main">
+  <!-- Main layout -->
+  <main class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 -mt-28 sm:-mt-36 pb-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+      <!-- Profile card -->
+      <aside class="lg:col-span-4 lg:sticky lg:top-6 self-start relative z-0">
+        <img
+          src="assets/img/canokay.webp"
+          alt="Can Okay"
+          class="w-28 h-28 sm:w-40 sm:h-40 lg:w-full lg:h-auto lg:aspect-square object-cover rounded-2xl mb-4 mx-auto lg:mx-0 shadow-lg"
+        />
+        <div class="bg-white rounded-2xl shadow-lg p-5 sm:p-6">
+          <h1 class="text-2xl font-bold tracking-tight text-center lg:text-left">Can Okay</h1>
+          <p class="text-sm text-gray-500 mt-1 text-center lg:text-left">Software Engineer</p>
 
-  <header class="blog-header">
-      <h1 class="blog-title">{{ site.title }}</h1>
-      <h2 class="blog-description">{{ site.description }}</h2>
-  </header>
+          <div class="mt-6 space-y-3 text-sm">
+            <div>
+              <p class="font-semibold text-gray-900">Location</p>
+              <p class="text-gray-500">İzmir, Türkiye</p>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-900">Email</p>
+              <a href="mailto:hello@canokay.com.tr" class="text-gray-500 hover:text-accent transition-colors break-all">
+                hello@canokay.com.tr
+              </a>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-900">GitHub</p>
+              <a href="https://github.com/canokay" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-accent transition-colors break-all">
+                github.com/canokay
+              </a>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-900">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/can-okay-805741333/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-accent transition-colors break-all">
+                linkedin.com/in/can-okay-805741333
+              </a>
+            </div>
+          </div>
 
-  <div class="cf frame">
-    {% for post in paginator.posts %}
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-        <div class="article-item">
-          <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-          </header>
-          <section class="post-excerpt" itemprop="description">
-            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-          </section>
-          <div class="post-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+        </div>
+      </aside>
+
+      <!-- Content column -->
+      <div class="lg:col-span-8 space-y-6 relative z-10">
+        <!-- Sticky section nav -->
+        <nav
+          class="bg-white rounded-2xl shadow-lg p-3 sm:p-4 sticky top-3 z-20"
+          aria-label="CV sections"
+        >
+          <div class="flex flex-wrap gap-2">
+            <a href="#about" class="nav-link active rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors" data-section="about">My About</a>
+            <a href="#resume" class="nav-link rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors" data-section="resume">My Resume</a>
+            <a href="#work" class="nav-link rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors" data-section="work">My Work</a>
+            <a href="#contact" class="nav-link rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors" data-section="contact">My Contact</a>
+          </div>
+        </nav>
+
+        <!-- About -->
+        <section id="about" class="scroll-mt-28 bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
+          <div class="section-title mb-3">
+            About Me
+            <span class="dot" aria-hidden="true"></span>
+          </div>
+          
+
+          <p class="mt-4 text-gray-500 leading-relaxed max-w-2xl">
+            Backend geliştirme, bulut teknolojileri, yapay zekâ uygulamaları ve e-ticaret altyapıları alanlarında çalışan bir yazılım geliştiricisiyim. Python ve Django başta olmak üzere modern web teknolojileriyle ölçeklenebilir web uygulamaları, REST API'leri ve çok kiracılı (multi-tenant) sistemler geliştiriyorum. Docker tabanlı geliştirme süreçleri, veritabanı modelleme ve bulut altyapıları konusunda deneyime sahibim.
+          </p>
+
+          <p class="mt-4 text-gray-500 leading-relaxed max-w-2xl">
+            Yazılım geliştirme çalışmalarımın yanı sıra güneş enerjisi (GES) sektörüne yönelik proje yönetimi, saha operasyonları ve kalite kontrol süreçlerinin dijitalleştirilmesine odaklanan çözümler geliştirdim. Farklı sektörlerde edindiğim teknik bilgi ve saha deneyimini modern yazılım mimarileriyle birleştirerek ölçeklenebilir, sürdürülebilir ve yüksek performanslı sistemler üretmeyi hedefliyorum.
+          </p>
+
+          <h3 class="mt-10 text-xl font-bold">What I Do?</h3>
+          <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <article class="bg-gray-50 rounded-xl p-5">
+              <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-white mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <h4 class="font-bold text-base">Yazılım Geliştirme</h4>
+              <ul class="mt-3 space-y-2 text-sm text-gray-500">
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>Python, Django</span></li>
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>Next.js, NestJS</span></li>
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>iOS, Android</span></li>
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>Docker, Kubernetes</span></li>
+              </ul>
+            </article>
+            <article class="bg-gray-50 rounded-xl p-5">
+              <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-white mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h4 class="font-bold text-base">Güneş Enerjisi (GES)</h4>
+              <ul class="mt-3 space-y-2 text-sm text-gray-500">
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>Güneş Enerjisi Santrali (GES) Projeleri</span></li>
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>Kalite Kontrol (QA/QC)</span></li>
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>PV Modül Muayene ve Kabul Süreçleri</span></li>
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>FAT (Factory Acceptance Test)</span></li>
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>Saha Kabul Testleri (SAT)</span></li>
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>EPC Proje Süreçleri</span></li>
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>Çatı ve Arazi Tipi GES Projeleri</span></li>
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>Proje Dokümantasyonu ve Teknik Raporlama</span></li>
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>IEC Standartlarına Uygunluk Kontrolleri</span></li>
+                <li class="flex gap-2.5"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span>Kusur Tespiti ve Kalite Analizi</span></li>
+              </ul>
+            </article>
+
+          </div>
+
+          <div class="mt-6 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+            <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-gradient-to-br from-gray-50 to-white p-5 text-center shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+              <div class="absolute inset-x-0 top-0 h-1 bg-accent"></div>
+              <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">50+</p>
+              <p class="mt-2 text-xs sm:text-sm text-gray-500 leading-snug">Yazılım Geliştirme Projeleri</p>
+            </div>
+            <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-gradient-to-br from-gray-50 to-white p-5 text-center shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+              <div class="absolute inset-x-0 top-0 h-1 bg-accent"></div>
+              <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 whitespace-nowrap">250&nbsp;MW+</p>
+              <p class="mt-2 text-xs sm:text-sm text-gray-500 leading-snug">Solar Module FAT</p>
+            </div>
+            <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-gradient-to-br from-gray-50 to-white p-5 text-center shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+              <div class="absolute inset-x-0 top-0 h-1 bg-accent"></div>
+              <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 whitespace-nowrap">40&nbsp;MW+</p>
+              <p class="mt-2 text-xs sm:text-sm text-gray-500 leading-snug">Çatı GES Denetimi</p>
+            </div>
+            <div class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-gradient-to-br from-gray-50 to-white p-5 text-center shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+              <div class="absolute inset-x-0 top-0 h-1 bg-accent"></div>
+              <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 whitespace-nowrap">80&nbsp;MW+</p>
+              <p class="mt-2 text-xs sm:text-sm text-gray-500 leading-snug">Arazi GES Denetimi</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Resume -->
+        <section id="resume" class="scroll-mt-28 bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
+          <div class="section-title mb-3">
+            My Resume
+            <span class="dot" aria-hidden="true"></span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold">Experience &amp; Education</h2>
+          <p class="mt-3 text-gray-500 max-w-2xl">
+            A snapshot of roles and learning that shaped how I lead operations and product delivery.
+          </p>
+
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="text-lg font-bold mb-4">Experience</h3>
+              <ol class="relative border-l border-gray-200 space-y-6 ml-2">
+                <li class="relative ml-6">
+                  <span class="absolute -left-[1.9rem] top-1.5 w-3 h-3 rounded-full bg-accent ring-4 ring-white"></span>
+                  <p class="text-xs font-semibold text-accent">2025 — Present</p>
+                  <h4 class="font-bold mt-1">Freelancer</h4>
+                  <p class="text-sm text-gray-500">Yazılım Geliştirme</p>
+                  <p class="mt-2 text-sm text-gray-500">Yazılım geliştirme, yapay zeka uygulamaları, e-ticaret altyapıları, bulut teknolojileri, mobil uygulamalar, web uygulamaları geliştiriyorum.</p>
+                </li>
+                <li class="relative ml-6">
+                  <span class="absolute -left-[1.9rem] top-1.5 w-3 h-3 rounded-full bg-accent ring-4 ring-white"></span>
+                  <p class="text-xs font-semibold text-accent">2019 — 2025</p>
+                  <h4 class="font-bold mt-1">Solarbu</h4>
+                  <p class="text-sm text-gray-500">Denetimci</p>
+                  <p class="mt-2 text-sm text-gray-500">
+                  Panel üretimi, kalite kontrolu, proje yönetimi, saha operasyonları, kalite kontrol denetimleri yaptım.
+                  </p>
+                </li>
+              </ol>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold mb-4">Education</h3>
+              <ol class="relative border-l border-gray-200 space-y-6 ml-2">
+                <li class="relative ml-6">
+                  <span class="absolute -left-[1.9rem] top-1.5 w-3 h-3 rounded-full bg-accent ring-4 ring-white"></span>
+                  <p class="text-xs font-semibold text-accent">Bachelor Degree</p>
+                  <h4 class="font-bold mt-1">Management Information Systems</h4>
+                  <p class="text-sm text-gray-500">Anadolu University — Open Education Faculty</p>
+                  <p class="mt-2 text-sm text-gray-500">Educational Language: Turkish</p>
+                </li>
+                <li class="relative ml-6">
+                  <span class="absolute -left-[1.9rem] top-1.5 w-3 h-3 rounded-full bg-accent ring-4 ring-white"></span>
+                  <p class="text-xs font-semibold text-accent">Associate Degree</p>
+                  <h4 class="font-bold mt-1">Computer Programming</h4>
+                  <p class="text-sm text-gray-500">Dokuz Eylül University — Izmir Vocational School</p>
+                  <p class="mt-2 text-sm text-gray-500">Educational Language: Turkish</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- Work -->
+        <section id="work" class="scroll-mt-28 bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
+          <div class="section-title mb-3">
+            My Work
+            <span class="dot" aria-hidden="true"></span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold">Selected Projects</h2>
+          <p class="mt-3 text-gray-500 max-w-2xl">
+            Recent work spanning SaaS platforms, e-commerce, logistics, and inventory systems.
+          </p>
+          <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <button
+              type="button"
+              class="project-card text-left bg-gray-50 rounded-xl overflow-hidden isolate cursor-pointer transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              data-project="reportbu"
+            >
+              <div class="h-40 overflow-hidden rounded-t-xl">
+                <img src="assets/img/reportbu.webp" alt="Reportbu" class="h-full w-full object-cover block" />
+              </div>
+              <div class="p-5">
+                <p class="text-xs font-semibold text-accent">AI SaaS</p>
+                <h4 class="font-bold mt-1">Reportbu</h4>
+                <p class="mt-2 text-sm text-gray-500">AI-powered reporting and analytics platform.</p>
+              </div>
+            </button>
+            <button
+              type="button"
+              class="project-card text-left bg-gray-50 rounded-xl overflow-hidden isolate cursor-pointer transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              data-project="startineurope"
+            >
+              <div class="h-40 overflow-hidden rounded-t-xl">
+                <img src="assets/img/startineurope.webp" alt="StartInEurope" class="h-full w-full object-cover block" />
+              </div>
+              <div class="p-5">
+                <p class="text-xs font-semibold text-accent">Startup Platform</p>
+                <h4 class="font-bold mt-1">StartInEurope</h4>
+                <p class="mt-2 text-sm text-gray-500">Platform for company formation and startup discovery in Europe.</p>
+              </div>
+            </button>
+            <button
+              type="button"
+              class="project-card text-left bg-gray-50 rounded-xl overflow-hidden isolate cursor-pointer transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              data-project="meerketz"
+            >
+              <div class="h-40 overflow-hidden rounded-t-xl">
+                <img src="assets/img/meerketz.webp" alt="Meerketz" class="h-full w-full object-cover block" />
+              </div>
+              <div class="p-5">
+                <p class="text-xs font-semibold text-accent">E-Commerce</p>
+                <h4 class="font-bold mt-1">Meerketz</h4>
+                <p class="mt-2 text-sm text-gray-500">Multi-channel e-commerce and mobile commerce platform.</p>
+              </div>
+            </button>
+            <button
+              type="button"
+              class="project-card text-left bg-gray-50 rounded-xl overflow-hidden isolate cursor-pointer transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              data-project="stockio"
+            >
+              <div class="h-40 overflow-hidden rounded-t-xl">
+                <img src="assets/img/stockio.webp" alt="Stockio" class="h-full w-full object-cover block" />
+              </div>
+              <div class="p-5">
+                <p class="text-xs font-semibold text-accent">Inventory Management</p>
+                <h4 class="font-bold mt-1">Stockio</h4>
+                <p class="mt-2 text-sm text-gray-500">Smart inventory management platform with automated stock monitoring.</p>
+              </div>
+            </button>
+            <button
+              type="button"
+              class="project-card text-left bg-gray-50 rounded-xl overflow-hidden isolate cursor-pointer transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              data-project="supplierx"
+            >
+              <div class="h-40 overflow-hidden rounded-t-xl">
+                <img src="assets/img/supplierx.webp" alt="SupplierX" class="h-full w-full object-cover block" />
+              </div>
+              <div class="p-5">
+                <p class="text-xs font-semibold text-accent">B2B Platform</p>
+                <h4 class="font-bold mt-1">SupplierX</h4>
+                <p class="mt-2 text-sm text-gray-500">Supplier management and procurement marketplace.</p>
+              </div>
+            </button>
+            <button
+              type="button"
+              class="project-card text-left bg-gray-50 rounded-xl overflow-hidden isolate cursor-pointer transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              data-project="yukdirekt"
+            >
+              <div class="h-40 overflow-hidden rounded-t-xl">
+                <img src="assets/img/yukdirekt.webp" alt="YükDirekt" class="h-full w-full object-cover block" />
+              </div>
+              <div class="p-5">
+                <p class="text-xs font-semibold text-accent">Logistics</p>
+                <h4 class="font-bold mt-1">YükDirekt</h4>
+                <p class="mt-2 text-sm text-gray-500">Freight and logistics mobile application.</p>
+              </div>
+            </button>
+            <button
+              type="button"
+              class="project-card text-left bg-gray-50 rounded-xl overflow-hidden isolate cursor-pointer transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              data-project="paletdirekt"
+            >
+              <div class="h-40 overflow-hidden rounded-t-xl">
+                <img src="assets/img/paletdirekt.webp" alt="PaletDirekt" class="h-full w-full object-cover block" />
+              </div>
+              <div class="p-5">
+                <p class="text-xs font-semibold text-accent">Logistics</p>
+                <h4 class="font-bold mt-1">PaletDirekt</h4>
+                <p class="mt-2 text-sm text-gray-500">Pallet-based logistics management platform.</p>
+              </div>
+            </button>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="scroll-mt-28 bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
+          <div class="section-title mb-3">
+            My Contact
+            <span class="dot" aria-hidden="true"></span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold">Let’s Work Together</h2>
+          <p class="mt-3 text-gray-500 max-w-2xl">
+            Have a project or role in mind? Reach out via email and I’ll get back to you soon.
+          </p>
+
+          <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-gray-50 rounded-xl p-5">
+              <p class="text-sm font-semibold">Email</p>
+              <a href="mailto:hello@canokay.com.tr" class="text-gray-500 text-sm hover:text-accent">hello@canokay.com.tr</a>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-5">
+              <p class="text-sm font-semibold">Location</p>
+              <p class="text-gray-500 text-sm">İzmir, Türkiye</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="pb-12 pt-4 text-center">
+    <div class="inline-flex items-center gap-2 mb-3">
+      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent text-white text-sm font-bold" aria-hidden="true">C</span>
+      <span class="text-lg font-bold tracking-tight">Can Okay</span>
+    </div>
+    <p class="text-sm text-gray-400">© 2026 . All rights reserved by Can Okay.</p>
+  </footer>
+
+  <!-- FAB -->
+  <a
+    href="#contact"
+    id="fab-contact"
+    class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-accent text-white shadow-lg flex items-center justify-center hover:bg-[#e0004c] transition-colors"
+    aria-label="Go to contact"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+    </svg>
+  </a>
+
+  <!-- Project modal -->
+  <div
+    id="project-modal"
+    class="project-modal fixed inset-0 z-[60] flex items-center justify-center p-4 pointer-events-none"
+    aria-hidden="true"
+  >
+    <div class="project-modal-backdrop absolute inset-0 bg-black/60" data-modal-close></div>
+    <div
+      class="project-modal-panel relative z-10 w-full max-w-xl max-h-[90vh] overflow-y-auto bg-white rounded-3xl shadow-[0_25px_80px_rgba(15,23,42,0.35)] border border-gray-100 ring-1 ring-black/5 scale-95 opacity-0"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <button
+        type="button"
+        class="absolute top-3 right-3 z-20 w-10 h-10 rounded-full bg-white text-gray-800 hover:bg-gray-100 shadow-md border border-gray-200 flex items-center justify-center transition"
+        data-modal-close
+        aria-label="Close"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div id="modal-accent" class="relative h-44 sm:h-52 overflow-hidden rounded-t-3xl bg-slate-800">
+        <img id="modal-image" src="" alt="" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent pointer-events-none"></div>
+        <div class="absolute bottom-4 left-5 right-14">
+          <span id="modal-category" class="inline-flex rounded-full bg-white/20 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"></span>
+        </div>
+      </div>
+
+      <div class="p-5 sm:p-7">
+        <h3 id="modal-title" class="text-2xl sm:text-[1.75rem] font-bold tracking-tight text-slate-900"></h3>
+        <p id="modal-summary" class="mt-2 text-gray-500 text-sm leading-relaxed"></p>
+        <a
+          id="modal-website-link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:underline hidden break-all"
+        ></a>
+
+        <div class="mt-6 grid grid-cols-2 gap-3">
+          <div class="rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100/80 border border-gray-100 p-4">
+            <p class="text-[11px] font-semibold uppercase tracking-wide text-gray-400">Role</p>
+            <p id="modal-role" class="mt-1 text-sm font-semibold text-slate-800"></p>
+          </div>
+          <div class="rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100/80 border border-gray-100 p-4">
+            <p class="text-[11px] font-semibold uppercase tracking-wide text-gray-400">Year</p>
+            <p id="modal-year" class="mt-1 text-sm font-semibold text-slate-800"></p>
           </div>
         </div>
-      </article>
-    {% endfor %}
+
+        <div class="mt-6">
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-gray-400">Overview</p>
+          <p id="modal-overview" class="mt-2 text-sm text-gray-600 leading-relaxed"></p>
+        </div>
+
+        <div class="mt-6">
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-gray-400">Highlights</p>
+          <ul id="modal-highlights" class="mt-3 space-y-2.5"></ul>
+        </div>
+
+        <div class="mt-6">
+          <p class="text-[11px] font-semibold uppercase tracking-wide text-gray-400 mb-3">Tech Stack</p>
+          <div id="modal-stack" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <div id="modal-website-wrap" class="mt-7 hidden">
+          <a
+            id="modal-website"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-2 w-full sm:w-auto rounded-xl bg-accent text-white font-semibold py-3 px-5 hover:bg-[#e0004c] transition-colors"
+          >
+            Visit Website
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <nav class="pagination" role="navigation">
-    {% if paginator.next_page %}
-      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
-    {% else %}
-      <a class="newer-posts disabled">&larr; Older posts</a>
-    {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
-      {% else %}
-        <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
-      {% endif %}
-    {% else %}
-      <a class="older-posts disabled">Newer posts &rarr;</a>
-    {% endif %}
-  </nav>
+  <script>
+    (function () {
+      const links = document.querySelectorAll(".nav-link");
+      const sections = document.querySelectorAll("section[id]");
 
-</main>
+      function setActive(id) {
+        links.forEach(function (link) {
+          link.classList.toggle("active", link.dataset.section === id);
+        });
+      }
 
-{% include footer.html %}
+      links.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.getElementById(link.dataset.section);
+          if (!target) return;
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          setActive(link.dataset.section);
+          history.replaceState(null, "", "#" + link.dataset.section);
+        });
+      });
+
+      document.getElementById("fab-contact").addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.getElementById("contact");
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        setActive("contact");
+        history.replaceState(null, "", "#contact");
+      });
+
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              setActive(entry.target.id);
+            }
+          });
+        },
+        { rootMargin: "-30% 0px -55% 0px", threshold: 0 }
+      );
+
+      sections.forEach(function (section) {
+        observer.observe(section);
+      });
+
+      const projects = {
+        reportbu: {
+          category: "AI SaaS",
+          title: "Reportbu",
+          summary: "AI-powered reporting and analytics platform.",
+          role: "Software Engineer",
+          year: "2025",
+          accent: "from-violet-800 to-indigo-600",
+          image: "assets/img/reportbu.webp",
+          website: "https://reportbu.com",
+          overview:
+            "Developed an AI-powered SaaS platform that streamlines report generation, document management, and business analytics. The platform enables organizations to automate reporting workflows and gain insights through intelligent data processing.",
+          highlights: [
+            "Designed an AI-assisted reporting workflow.",
+            "Built document and report management modules.",
+            "Developed analytics dashboards for business insights.",
+            "Designed the platform with a scalable SaaS architecture.",
+          ],
+          stack: ["Python", "Django", "PostgreSQL", "Docker", "React", "AI"],
+        },
+        startineurope: {
+          category: "Startup Platform",
+          title: "StartInEurope",
+          summary: "Platform for company formation and startup discovery in Europe.",
+          role: "Software Engineer",
+          year: "2025",
+          accent: "from-blue-800 to-cyan-600",
+          image: "assets/img/startineurope.webp",
+          website: "https://startineurope.com",
+          overview:
+            "Built a digital platform that connects entrepreneurs with company formation services and startup resources across Europe, simplifying business setup and consulting processes.",
+          highlights: [
+            "Designed company formation workflows.",
+            "Developed startup discovery features.",
+            "Built consulting and application management modules.",
+            "Focused on scalable and user-friendly platform architecture.",
+          ],
+          stack: ["Python", "Django", "PostgreSQL", "Docker", "React"],
+        },
+        meerketz: {
+          category: "E-Commerce",
+          title: "Meerketz",
+          summary: "Multi-channel e-commerce and mobile commerce platform.",
+          role: "Software Engineer",
+          year: "2024",
+          accent: "from-rose-700 to-orange-500",
+          image: "assets/img/meerketz.webp",
+          website: "https://meerketz.shop",
+          overview:
+            "Developed a multi-channel commerce platform that centralizes product, order, and customer management while supporting both web and mobile shopping experiences.",
+          highlights: [
+            "Built centralized product and order management.",
+            "Designed multi-channel sales workflows.",
+            "Developed web and mobile commerce features.",
+            "Focused on scalable commerce infrastructure.",
+          ],
+          stack: ["Python", "Django", "PostgreSQL", "Docker", "React", "REST API"],
+        },
+        stockio: {
+          category: "Inventory Management",
+          title: "Stockio",
+          summary: "Smart inventory management platform with automated stock monitoring.",
+          role: "Software Engineer",
+          year: "2025",
+          accent: "from-emerald-800 to-green-600",
+          image: "assets/img/stockio.webp",
+          website: "https://stockio.space",
+          overview:
+            "Designed an inventory management platform that synchronizes stock across physical stores and e-commerce channels while automatically generating alerts through customizable business rules.",
+          highlights: [
+            "Implemented real-time inventory synchronization.",
+            "Built customizable stock alert rules.",
+            "Supported multiple sales channel integrations.",
+            "Reduced manual inventory tracking with automation.",
+          ],
+          stack: ["Python", "Django", "PostgreSQL", "Redis", "Docker"],
+        },
+        supplierx: {
+          category: "B2B Platform",
+          title: "SupplierX",
+          summary: "Supplier management and procurement marketplace.",
+          role: "Software Engineer",
+          year: "2025",
+          accent: "from-amber-700 to-yellow-500",
+          image: "assets/img/supplierx.webp",
+          website: "https://supplierx.space",
+          overview:
+            "Developed a B2B procurement platform where businesses can automatically publish sourcing requests when inventory reaches critical levels, allowing suppliers to submit competitive offers.",
+          highlights: [
+            "Designed supplier and buyer management workflows.",
+            "Built automated procurement request generation.",
+            "Implemented quotation and supplier matching system.",
+            "Improved procurement efficiency through automation.",
+          ],
+          stack: ["Python", "Django", "PostgreSQL", "Docker", "REST API"],
+        },
+        yukdirekt: {
+          category: "Logistics",
+          title: "YükDirekt",
+          summary: "Freight and logistics mobile application.",
+          role: "Software Engineer",
+          year: "2024",
+          accent: "from-sky-800 to-blue-600",
+          image: "assets/img/yukdirekt.webp",
+          website: "https://yukdirekt.com",
+          overview:
+            "Developed a logistics platform that connects shippers and carriers, simplifying freight management through a mobile-first experience.",
+          highlights: [
+            "Designed freight listing and matching workflows.",
+            "Built mobile-oriented logistics features.",
+            "Improved shipment management processes.",
+            "Created scalable logistics infrastructure.",
+          ],
+          stack: ["Python", "Django", "React Native", "REST API"],
+        },
+        paletdirekt: {
+          category: "Logistics",
+          title: "PaletDirekt",
+          summary: "Pallet-based logistics management platform.",
+          role: "Software Engineer",
+          year: "2024",
+          accent: "from-orange-800 to-amber-600",
+          image: "assets/img/paletdirekt.webp",
+          website: "https://paletdirekt.com",
+          overview:
+            "Developed a pallet logistics platform focused on pallet tracking, transportation workflows, and operational management for logistics companies.",
+          highlights: [
+            "Designed pallet tracking workflows.",
+            "Built logistics operation management features.",
+            "Developed mobile-first user experience.",
+            "Improved operational visibility across logistics processes.",
+          ],
+          stack: ["Python", "Django", "React Native"],
+        },
+      };
+
+      const modal = document.getElementById("project-modal");
+      const modalPanel = modal.querySelector(".project-modal-panel");
+      const modalAccent = document.getElementById("modal-accent");
+      const modalImage = document.getElementById("modal-image");
+      const modalCategory = document.getElementById("modal-category");
+      const modalTitle = document.getElementById("modal-title");
+      const modalSummary = document.getElementById("modal-summary");
+      const modalRole = document.getElementById("modal-role");
+      const modalYear = document.getElementById("modal-year");
+      const modalOverview = document.getElementById("modal-overview");
+      const modalHighlights = document.getElementById("modal-highlights");
+      const modalStack = document.getElementById("modal-stack");
+      const modalWebsiteWrap = document.getElementById("modal-website-wrap");
+      const modalWebsite = document.getElementById("modal-website");
+      const modalWebsiteLink = document.getElementById("modal-website-link");
+      let closeTimer = null;
+
+      function openModal(id) {
+        const project = projects[id];
+        if (!project) return;
+
+        if (closeTimer) {
+          clearTimeout(closeTimer);
+          closeTimer = null;
+        }
+
+        modalAccent.className =
+          "relative h-44 sm:h-52 overflow-hidden rounded-t-3xl bg-slate-800";
+        if (project.image) {
+          modalImage.src = project.image;
+          modalImage.alt = project.title;
+          modalImage.classList.remove("hidden");
+        } else {
+          modalImage.removeAttribute("src");
+          modalImage.alt = "";
+          modalImage.classList.add("hidden");
+        }
+        modalCategory.textContent = project.category;
+        modalTitle.textContent = project.title;
+        modalSummary.textContent = project.summary;
+        modalRole.textContent = project.role;
+        modalYear.textContent = project.year;
+        modalOverview.textContent = project.overview;
+
+        modalHighlights.innerHTML = "";
+        project.highlights.forEach(function (item) {
+          const li = document.createElement("li");
+          li.className = "flex gap-2.5 text-sm text-gray-600 leading-relaxed";
+          li.innerHTML =
+            '<span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span><span></span>';
+          li.querySelector("span:last-child").textContent = item;
+          modalHighlights.appendChild(li);
+        });
+
+        modalStack.innerHTML = "";
+        project.stack.forEach(function (tech) {
+          const chip = document.createElement("span");
+          chip.className =
+            "inline-flex rounded-full border border-accent/15 bg-accent/5 px-3 py-1.5 text-xs font-semibold text-accent";
+          chip.textContent = tech;
+          modalStack.appendChild(chip);
+        });
+
+        if (project.website) {
+          modalWebsite.href = project.website;
+          modalWebsiteWrap.classList.remove("hidden");
+          modalWebsiteLink.href = project.website;
+          modalWebsiteLink.textContent = project.website.replace(/^https?:\/\//, "");
+          modalWebsiteLink.classList.remove("hidden");
+        } else {
+          modalWebsite.removeAttribute("href");
+          modalWebsiteWrap.classList.add("hidden");
+          modalWebsiteLink.removeAttribute("href");
+          modalWebsiteLink.textContent = "";
+          modalWebsiteLink.classList.add("hidden");
+        }
+
+        modal.setAttribute("aria-hidden", "false");
+        modal.classList.remove("pointer-events-none");
+        document.body.classList.add("overflow-hidden");
+
+        requestAnimationFrame(function () {
+          modal.classList.add("is-open");
+          modalPanel.classList.add("is-open");
+        });
+      }
+
+      function closeModal() {
+        modal.classList.remove("is-open");
+        modalPanel.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+
+        closeTimer = setTimeout(function () {
+          modal.classList.add("pointer-events-none");
+          document.body.classList.remove("overflow-hidden");
+          closeTimer = null;
+        }, 220);
+      }
+
+      document.querySelectorAll(".project-card").forEach(function (card) {
+        card.addEventListener("click", function () {
+          openModal(card.dataset.project);
+        });
+      });
+
+      modal.querySelectorAll("[data-modal-close]").forEach(function (el) {
+        el.addEventListener("click", closeModal);
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && modal.getAttribute("aria-hidden") === "false") {
+          closeModal();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
